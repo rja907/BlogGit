@@ -7,6 +7,7 @@ class PostsIndex extends Component {
     this.props.fetchPosts();
   }
   render() {
+    console.log(this.props);
     return(
       <div>
         Posts Index!
@@ -15,4 +16,8 @@ class PostsIndex extends Component {
   }
 }
 
-export default connect(null, {fetchPosts})(PostsIndex);
+function mapStateToProps(state){
+  return { posts: state.props};
+}
+
+export default connect(mapStateToProps, {fetchPosts})(PostsIndex);
