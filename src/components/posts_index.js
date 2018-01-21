@@ -6,7 +6,7 @@ import { fetchPosts } from '../actions';
 
 class PostsIndex extends Component {
   componentDidMount(){
-    
+
       this.props.fetchPosts();
 
   }
@@ -25,7 +25,7 @@ class PostsIndex extends Component {
     return(
       <div>
         <div className="text-xs-right">
-          <Link className="btn btn-binary" to="/posts/new">
+          <Link className="btn btn-primary" to="/posts/new">
             Add a Post
           </Link>
         </div>

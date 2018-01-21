@@ -24,16 +24,17 @@ class PostsShow extends Component {
     }
     return (
       <div>
-        <Link to="/" className="btn btn-warning" >Back to Homepage!</Link>
+        <h3>{post.title}</h3>
+        <div>
+        <h6>Categories: </h6><p>{post.categories}</p>
+        </div>
+        <p>{post.content}</p>
         <button
           className="btn btn-danger pull-xs-right"
           onClick={this.onDeleteClick.bind(this)}
         >
-          Delete Post!
+          Delete Post
         </button>
-        <h3>{post.title}</h3>
-        <h6>Categories: {post.categories}</h6>
-        <p>{post.content}</p>
       </div>
     );
   }
