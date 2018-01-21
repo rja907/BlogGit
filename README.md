@@ -15,7 +15,7 @@ A React and Redux application to post blogs and navigate through different route
 
 To support navigation in the application by tying different components 'to' different paths!
 
-Also, we used the React-Router with Action Creators!
+Also, I used the React-Router with Action Creators!
 
 #### ownProps
 
