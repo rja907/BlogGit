@@ -42,7 +42,7 @@ class PostsNew extends Component {
         <Field
           name="categories"
           component={this.renderField}
-          foolabel="Categories"
+          foolabel="Author"
         />
         <Field
           name="content"

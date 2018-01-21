@@ -10,6 +10,7 @@ import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
 import PostsShow from './components/posts_show';
 import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -23,6 +24,7 @@ ReactDOM.render(
           <Route path="/posts/:id" component={PostsShow} />
           <Route path="/" component={PostsIndex} />
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   </Provider>

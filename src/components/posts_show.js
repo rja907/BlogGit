@@ -25,9 +25,9 @@ class PostsShow extends Component {
     return (
       <div>
         <h3>{post.title}</h3>
-        <div>
-        <h6>Categories: </h6><p>{post.categories}</p>
-        </div>
+        <br />
+        <h6>Author: {post.categories}</h6>
+        <br />
         <p>{post.content}</p>
         <button
           className="btn btn-danger pull-xs-right"

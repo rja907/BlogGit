@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -16,8 +15,9 @@ class Header extends Component {
             to="/"
             className="center-block brand-logo"
           >
-            <div style={headerStyle}>BlogGit</div>
+            <div style={headerStyle}>❂ BlogGit</div>
           </Link>
+          <hr />
         </div>
       </nav>
     );
